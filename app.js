@@ -3,7 +3,6 @@ var routes = require('./routes');
 app = express();
 var port = '3000';
 
-// MORO dasddas
 
 app.set('view engine', 'ejs');
 

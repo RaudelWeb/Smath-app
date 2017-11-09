@@ -1,6 +1,5 @@
 var package_fav = require('../package.json');
-
-
+	
 
 exports.home = function (req, res) {
 	res.render('home', {
@@ -14,5 +13,6 @@ exports.home = function (req, res) {
 exports.notFound = function(req,res) {
 	res.render('error_page', {
 		title: 'Title goes here',
+		favicon: package_fav.favicon,
 	});
 };
