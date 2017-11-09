@@ -1,0 +1,18 @@
+{
+  "name": "smath-app",
+  "version": "1.0.0",
+  "description": "",
+  "favicon": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/S-Bahn-Logo.svg/761px-S-Bahn-Logo.svg.png",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Smath Labs Team",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^2.5.7",
+    "express": "^4.16.2",
+    "materialize-css": "^0.100.2",
+    "watch": "^1.0.2"
+  }
+}
