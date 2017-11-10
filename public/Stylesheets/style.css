@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,600,700');
 
+body {
+	font-family: 'Barlow', sans-serif;
+}
+
 .floating-bottom {
 	position: absolute;
 	bottom: 30px;
@@ -61,5 +65,41 @@ main.error {
 	text-align: center;
 	font-size: 2.5em;
 	font-weight:  500;
+	opacity: .7;
+}
+
+.user_prof_img {
+	width: 80px;
+	height: auto;
+	border-radius: 50px;
+	display: inline-block;
+	border: 4px solid rgba(255,255,255, .2);
+}
+
+h5.user-name {
+	font-size: 1em;
+	color: white;
+	font-weight: 600;
+}
+
+h5.user-email {
+	font-size: .8em;
+	color: white;
+
+}
+
+.user_prof_img:hover {
+	border: 4px solid rgba(255,255,255, .5);
+	transition: all .4s;
+}
+
+.user {
+	padding: 20px 0;
+}
+
+
+span.date {
+	font-size: .6em;
+	color: black;
 	opacity: .7;
 }
