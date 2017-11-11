@@ -20,6 +20,8 @@ connection.query("REPLACE INTO homework_data (email, date, description, title) V
 
 connection.end();
 
+//Test
+
 app.set('view engine', 'ejs');
 
 var path = require('path');
