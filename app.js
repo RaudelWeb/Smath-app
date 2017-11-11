@@ -5,6 +5,21 @@ var calendar = require('calendar');
 app = express();
 var port = '3000';
 
+var mysql      = require('mysql');
+var connection = mysql.createConnection({
+  host     : 'localhost',
+  user     : 'root',
+  password : '',
+  database : 'smath'
+});
+
+connection.connect();
+connection.query("REPLACE INTO homework_data (email, date, description, title) VALUES ('nikninza@icloud.com', '10/11/2017', 'Test homework', 'Test')", function (error, results, fields) {
+  if (error) throw error;
+});
+
+connection.end();
+
 app.set('view engine', 'ejs');
 
 var path = require('path');
