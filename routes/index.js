@@ -20,8 +20,20 @@ exports.calendar = function(req,res) {
 			titulo: 'Smath Labs School App | Watson @ School',
 			favicon: package_fav.favicon,
 			profile_img: package_fav.profile,
+			profile_name: package_fav.profile_name,
+			email: package_fav.email,
 			date : today,
 		});
+};
+
+exports.profile = function(req,res) {
+	res.render('profile', {
+		titulo: 'Smath Labs School App | Watson @ School',
+		favicon: package_fav.favicon,
+		profile_img: package_fav.profile,
+		profile_name: package_fav.profile_name,
+		email: package_fav.email,
+	});
 };
 
 
@@ -31,6 +43,8 @@ exports.home = function (req, res) {
 		favicon: package_fav.favicon,
 		profile_img: package_fav.profile,
 		date : today,
+		profile_name: package_fav.profile_name,
+		email: package_fav.email,
 	});
 
 };
@@ -42,5 +56,7 @@ exports.notFound = function(req,res) {
 		title: 'Title goes here',
 		favicon: package_fav.favicon,
 		profile_img: package_fav.profile,
+		profile_name: package_fav.profile_name,
+		email: package_fav.email,
 	});
 };

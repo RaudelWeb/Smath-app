@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title><%= titulo %></title>
+    <% include partials/head.ejs %>
+  </head>
+  <body>
+
+    <% include partials/menu.ejs %>
+    <% include partials/header.ejs %>
+
+    <main class="profile_main">
+      <div class="container">
+        <div class="card grey lighten-4">
+          <div class="card-content black-text">
+        <h4 class="profile_name teal-text text-darken-3">Profile</h4>
+        <div class="divider"></div>
+<br>
+
+          <img class="img-responsive user_prof_img_green" style="display: block;margin: 0 auto; " src="<%= profile_img %>" alt="">
+          <h5 class="center teal-text text-darken-2"><%= profile_name %></h5>
+          <h5 class="grey-text text-darken-3 center font-size-1em"><%= email %></h5>
+
+
+      </div>
+      </div>
+      </div>
+    </main>
+
+
+    <% include partials/footer.ejs %>
+  </body>
+</html>

@@ -31,6 +31,8 @@ app.get('/', routes.home);
 
 app.get('/calendar', routes.calendar);
 
+app.get('/profile', routes.profile);
+
 app.get('*', routes.notFound);
 
 app.listen(port, function() {
