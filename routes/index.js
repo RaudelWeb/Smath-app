@@ -15,6 +15,15 @@ if(mm<10) {
 
 today = dd + '/' + mm + '/' + yyyy;
 
+exports.calendar = function(req,res) {
+		res.render('calendar', {
+			titulo: 'Smath Labs School App | Watson @ School',
+			favicon: package_fav.favicon,
+			profile_img: package_fav.profile,
+			date : today,
+		});
+};
+
 
 exports.home = function (req, res) {
 	res.render('home', {

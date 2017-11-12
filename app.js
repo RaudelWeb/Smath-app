@@ -1,6 +1,6 @@
 var express = require('express');
 var routes = require('./routes');
-var calendar = require('calendar');
+var calendar = require('Calendar');
 
 app = express();
 var port = '3000';
@@ -28,6 +28,8 @@ var path = require('path');
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.get('/', routes.home);
+
+app.get('/calendar', routes.calendar);
 
 app.get('*', routes.notFound);
 
