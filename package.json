@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "favicon": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/S-Bahn-Logo.svg/761px-S-Bahn-Logo.svg.png",
-  "profile": "Images/LEEVI-AVATAR.jpg",
+  "profile": "https://raw.githubusercontent.com/iambumblehead/es5classic/master/es5classic_360x360.png",
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
