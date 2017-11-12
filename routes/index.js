@@ -41,5 +41,6 @@ exports.notFound = function(req,res) {
 	res.render('error_page', {
 		title: 'Title goes here',
 		favicon: package_fav.favicon,
+		profile_img: package_fav.profile,
 	});
 };
