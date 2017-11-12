@@ -103,3 +103,9 @@ span.date {
 	color: black;
 	opacity: .7;
 }
+
+@media screen and (max-width: 360px) {
+	main.error {
+		margin-top: -10px;
+	}
+}
