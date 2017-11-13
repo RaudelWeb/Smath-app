@@ -2,10 +2,11 @@
 
 body {
 	font-family: 'Barlow', sans-serif;
+	overflow-x: hidden;
 }
 
 .floating-bottom {
-	position: absolute;
+	position: fixed;
 	bottom: 30px;
 	left: 50px;
 }
@@ -108,6 +109,29 @@ span.date {
 	main.error {
 		margin-top: -10px;
 	}
+
+}
+
+@media screen and (max-width: 400px) {
+	.font-size-1em {
+		font-size: 30px;
+	}
+
+}
+
+.border-top {
+	position: relative;
+}
+
+.border-top:before {
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 1px;
+	background-color: grey;
+	opacity: .2;
+	left: 5px;
+	right: 0px;
 }
 
 .profile_name {
@@ -132,4 +156,48 @@ span.date {
 .user_prof_img_green:hover {
 	border: 4px solid rgba(77,182,172, .9);
 	transition: all .5s;
+}
+
+.calendar-first-week  {
+	display: inline-flex;
+	margin: 0 auto;
+}
+
+
+
+.calendar-first-week li {
+	padding: 5px;
+	font-size: 1em;
+	background: #eeeeee ;
+	margin: 5px;
+	border-radius: 6px;
+	width: 30px;
+	text-align: center;
+}
+
+.border-left {
+	border-left: 3px solid #00796b;
+	margin-top: 15px;
+}
+
+.card-content {
+	position: relative;
+}
+
+.close-panel {
+	position: absolute;
+	bottom: 40%;
+	right: 30px;
+}
+
+.card-content.grey {
+	margin-top: 20px;
+}
+
+i.material-icons {
+	text-align: center;
+}
+
+.calendar {
+	max-width: 200px;
 }
