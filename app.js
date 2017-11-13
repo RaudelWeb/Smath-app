@@ -29,7 +29,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.get('/', routes.home);
 
-app.get('/calendar', routes.calendar);
+// app.get('/calendar', routes.calendar);
 app.get('/user', routes.user);
 
 app.get('/profile', routes.profile);

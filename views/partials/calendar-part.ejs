@@ -26,12 +26,19 @@
                 </div>
               </div>
               <%# / Homework example   %>
-              <%# DELETE EXAM %>
+              <%# ADD HOMEWORK %>
               <div class="card-content grey lighten-2">
-                <center><i class="material-icons">add</i></center>
+                <center><a class="dropdown-button" data-constrainWidth="false" data-activates='homework'> <i class="material-icons teal-text">add</i></a></center>
+
+                <ul id='homework' class='dropdown-content'>
+                    <li><a href="#!"><i class="material-icons">keyboard_voice</i>Voice</a></li>
+                    <div class="divider"></div>
+                    <li><a href="#!"><i class="material-icons">keyboard</i>Text</a></li>
+                </ul>
+
               </div>
             </div>
-            <div class="col s12 m6">
+            <div class="col s12 m6 mt-300px">
               <h4 class="teal-text text-darken-3">Exams</h4>
               <div class="divider"></div>
               <%# Exams example  %>
@@ -46,16 +53,22 @@
                 </div>
               </div>
               <%# / Exams example   %>
-              <%# DELETE EXAM %>
+              <%# ADD EXAM %>
               <div class="card-content grey lighten-2">
-                <center><i class="material-icons">add</i></center>
+                <center><a class="dropdown-button" data-constrainWidth="false" data-activates='exams'> <i class="material-icons teal-text">add</i></a></center>
+
+                <ul id='exams' class='dropdown-content'>
+                    <li><a href="#!"><i class="material-icons">keyboard_voice</i>Voice</a></li>
+                    <div class="divider"></div>
+                    <li><a href="#!"><i class="material-icons">keyboard</i>Text</a></li>
+                </ul>
               </div>
             </div>
           </div>
         </div>
       </div>
       <div class="modal-footer">
-        <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Agree</a>
+        <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">ok  </a>
       </div>
     </div>
   <center> <ul class="calendar-first-week">

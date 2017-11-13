@@ -27,12 +27,13 @@ body {
 	margin-top: -12px;
 }
 
-main {
+main.title-box {
 	width: 100%;
 	height: auto;
 	padding: 10px 0px;
 	color: white;
 }
+
 
 .error-title {
 	color: #00695c;
@@ -197,6 +198,10 @@ span.date {
 i.material-icons {
 	text-align: center;
 }
+
+/*.dropdown-content li>a, .dropdown-content li>span {
+	padding: 10px;
+}*/
 
 .calendar {
 	max-width: 200px;
